@@ -4,7 +4,7 @@
  */
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/next";
 import LandingPage from './components/LandingPage';
 import ContactPage from './components/ContactPage';
 import TermsPage from './components/TermsPage';

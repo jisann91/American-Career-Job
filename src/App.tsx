@@ -4,6 +4,7 @@
  */
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import LandingPage from './components/LandingPage';
 import ContactPage from './components/ContactPage';
 import TermsPage from './components/TermsPage';
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
